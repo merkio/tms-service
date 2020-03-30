@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TestAutomationResultOwnerStatisticsDTO {
+public class ResultOwnerStatisticsDTO {
 
     private String name;
 

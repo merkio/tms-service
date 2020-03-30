@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class TestAutomationRunDTO {
+public class RunDTO {
 
     private Long id;
 
@@ -39,8 +39,8 @@ public class TestAutomationRunDTO {
 
     private String sendTo;
 
-    private TestAutomationRunConfigurationDTO configuration;
+    private RunConfigurationDTO configuration;
 
-    private TestAutomationRunStatisticsDTO statisticsDTO;
+    private RunStatisticsDTO statisticsDTO;
 
 }

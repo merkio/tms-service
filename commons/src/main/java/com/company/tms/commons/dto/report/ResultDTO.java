@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class TestAutomationResultDTO {
+public class ResultDTO {
 
     private Long id;
 
@@ -71,6 +71,6 @@ public class TestAutomationResultDTO {
 
     private String traceId;
 
-    private TestAutomationReportAttachmentDTO attachmentDTO;
+    private ReportAttachmentDTO attachmentDTO;
 
 }

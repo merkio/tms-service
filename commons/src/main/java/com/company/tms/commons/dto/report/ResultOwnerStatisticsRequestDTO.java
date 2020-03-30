@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TestAutomationResultOwnerStatisticsRequestDTO {
+public class ResultOwnerStatisticsRequestDTO {
 
     @NonNull
     private String owner;

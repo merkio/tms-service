@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class TestAutomationLogDTO {
+public class LogDTO {
 
     private Long id;
 

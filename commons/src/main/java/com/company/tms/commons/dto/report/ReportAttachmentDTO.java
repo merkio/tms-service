@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class TestAutomationReportAttachmentDTO {
+public class ReportAttachmentDTO {
 
     private Long testResultId;
 

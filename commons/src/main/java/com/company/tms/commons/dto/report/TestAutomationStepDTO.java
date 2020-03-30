@@ -32,5 +32,5 @@ public class TestAutomationStepDTO {
      * Indicates if the step was successfull
      */
     private String status;
-    private List<TestAutomationParameterDTO> parameters;
+    private List<ParameterDTO> parameters;
 }

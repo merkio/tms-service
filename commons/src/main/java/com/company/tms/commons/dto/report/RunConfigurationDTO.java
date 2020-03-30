@@ -7,7 +7,7 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class TestAutomationRunConfigurationDTO {
+public class RunConfigurationDTO {
 
     private Integer id;
 

@@ -1,4 +1,4 @@
-package space.geek.tms.config;
+package com.company.tms.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

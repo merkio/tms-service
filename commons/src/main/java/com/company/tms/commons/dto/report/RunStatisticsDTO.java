@@ -10,7 +10,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class TestAutomationRunStatisticsDTO {
+public class RunStatisticsDTO {
 
     private Integer total;
 

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TestAutomationParameterDTO {
+public class ParameterDTO {
     private String name;
     private String value;
 }
