@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    service: tms-auth
+  name: tms-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: tms-auth
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        service: tms-auth
+    spec:
+      containers:
+      - env:
+        - name: DB_HOST
+          value: database
+        image: ishaman/tms-auth
+        imagePullPolicy: ""
+        name: tms-auth
+        ports:
+        - containerPort: 9191
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: []
+status: {}

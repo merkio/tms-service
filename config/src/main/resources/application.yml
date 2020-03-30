@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/merkushevio/spring-boot-configuration
+          search-paths: '{application}'
+server:
+  port: 8282

@@ -1,0 +1,5 @@
+spring:
+  jpa:
+    show-sql: on
+
+debug: on

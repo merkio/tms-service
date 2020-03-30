@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    service: tms-auth
+  name: tms-auth
+spec:
+  ports:
+  - name: "9191"
+    port: 9191
+    targetPort: 9191
+  selector:
+    service: tms-auth
+  type: ClusterIP
+status:
+  loadBalancer: {}
