@@ -4,10 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.security.core.GrantedAuthority;
 
 import java.time.LocalDateTime;
-import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
@@ -28,7 +26,7 @@ public class ClientDetailsDTO {
     private Set<String> scope;
     private Set<String> authorizedGrantTypes;
     private Set<String> registeredRedirectUri;
-    private Collection<GrantedAuthority> authorities;
+    private Set<String> roles;
     private Integer accessTokenValiditySeconds;
     private Integer refreshTokenValiditySeconds;
     private boolean autoApprove;

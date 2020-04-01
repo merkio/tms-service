@@ -14,7 +14,7 @@ import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-@FeignClient(value = "tms-auth")
+@FeignClient(value = "auth-client-details", url = "http://localhost:9191")
 @ApiModel(description = "Operations with users")
 public interface ClientDetailsApi {
 

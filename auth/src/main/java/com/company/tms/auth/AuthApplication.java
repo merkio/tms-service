@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -32,10 +31,12 @@ public class AuthApplication {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
         // init the users
-        User user = new User();
-        user.setUsername("user");
-        user.setPassword(passwordEncoder.encode("user"));
-        user.setRoles(Set.of((UserRole.ROLE_USER.name())));
+        User user = User.builder()
+            .username("user")
+            .password(passwordEncoder.encode("user"))
+            .email("user@company.com")
+            .roles(Set.of(UserRole.ROLE_USER.name()))
+            .build();
         mongoTemplate.save(user);
 
         // init the client details
@@ -48,7 +49,7 @@ public class AuthApplication {
         clientDetails.setAuthorizedGrantTypes(Set.of("authorization_code", "refresh_token",
                                                      "password", "client_credentials"));
         clientDetails.setRegisteredRedirectUri(Set.of("http://localhost:8082/api/v1/users"));
-        clientDetails.setAuthorities(AuthorityUtils.createAuthorityList(UserRole.ROLE_USER.name()));
+        clientDetails.setRoles(Set.of(UserRole.ROLE_USER.name()));
         clientDetails.setAccessTokenValiditySeconds(60);
         clientDetails.setRefreshTokenValiditySeconds(14400);
         clientDetails.setAutoApprove(false);

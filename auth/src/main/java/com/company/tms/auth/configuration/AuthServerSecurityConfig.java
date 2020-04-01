@@ -1,11 +1,11 @@
 package com.company.tms.auth.configuration;
 
+import com.company.tms.auth.repository.UserRepository;
 import com.company.tms.auth.service.AuthUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -22,23 +22,17 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class AuthServerSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final MongoTemplate mongoTemplate;
+    private final UserRepository userRepository;
 
     @Override
     @Bean
     protected UserDetailsService userDetailsService() {
-        return new AuthUserDetailsService(mongoTemplate);
+        return new AuthUserDetailsService(userRepository);
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
-    }
-
-//    TODO add settings for controllers and other handlers
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        super.configure(http);
     }
 
     @Lazy

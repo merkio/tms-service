@@ -1,12 +1,12 @@
 package com.company.tms.auth.configuration;
 
+import com.company.tms.auth.repository.AuthorizationCodeRepository;
 import com.company.tms.auth.service.AuthAuthorizationCodeServices;
 import com.company.tms.auth.service.AuthClientDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
@@ -33,12 +33,12 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
 
     private final AuthenticationManager authenticationManager;
     private final TokenStore tokenStore;
-    private final MongoTemplate mongoTemplate;
+    private final AuthorizationCodeRepository authorizationCodeRepository;
     private final AuthClientDetailsService authClientDetailsService;
 
     @Bean
     public AuthAuthorizationCodeServices authorizationCodeServices() {
-        return new AuthAuthorizationCodeServices(mongoTemplate);
+        return new AuthAuthorizationCodeServices(authorizationCodeRepository);
     }
 
     @Override

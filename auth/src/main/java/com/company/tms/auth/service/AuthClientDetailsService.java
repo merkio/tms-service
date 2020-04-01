@@ -10,6 +10,7 @@ import com.company.tms.commons.dto.auth.ClientDetailsDTO;
 import com.company.tms.commons.util.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
@@ -64,7 +65,7 @@ public class AuthClientDetailsService implements ClientDetailsService, ClientReg
                                   clientDetails.getScope(),
                                   clientDetails.getAuthorizedGrantTypes(),
                                   clientDetails.getRegisteredRedirectUri(),
-                                  clientDetails.getAuthorities(),
+                                  clientDetails.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toSet()),
                                   clientDetails.getAccessTokenValiditySeconds(),
                                   clientDetails.getRefreshTokenValiditySeconds(),
                                   clientDetails.isAutoApprove("true"),
