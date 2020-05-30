@@ -20,52 +20,50 @@ import static io.space.geek.tms.commons.exception.ResourceNotFoundException.newR
 public class TestCaseService {
 
     private final TestCaseRepository testCaseRepository;
-//    private final TestResultApi testResultApi;
     private final EntityAdapter entityAdapter;
 
     public TestCaseDTO addTestCase(TestCaseDTO testCaseDTO) {
-        log.info("Add to testStory [{}]", testCaseDTO.getTitle());
+        log.info("Add to testCase [{}]", testCaseDTO.getTitle());
 
-        TestCase testStory = entityAdapter.fromDTO(testCaseDTO);
+        TestCase testCase = entityAdapter.fromDTO(testCaseDTO);
 
-        TestCase savedTestCase = testCaseRepository.saveAndFlush(testStory);
+        TestCase savedTestCase = testCaseRepository.saveAndFlush(testCase);
         log.trace("Successfully added to test_stories: [{}]", savedTestCase);
         return entityAdapter.toDTO(savedTestCase);
     }
 
     public TestCaseDTO updateTestCase(Long id, TestCaseDTO testCaseDTO) {
-        log.info("Updating testStory item [{}]", id);
-        TestCase testStory = entityAdapter.fromDTO(testCaseDTO);
+        log.info("Updating testCase item [{}]", id);
+        TestCase testCase = entityAdapter.fromDTO(testCaseDTO);
 
         TestCase currentTestCase = testCaseRepository.findById(id)
             .orElseThrow(newResourceNotFoundException("TestCase", "id", id));
-        BeanUtils.copyNonNullProperties(currentTestCase, testStory);
+        BeanUtils.copyNonNullProperties(currentTestCase, testCase);
 
         TestCase updatedTestCase = testCaseRepository.saveAndFlush(currentTestCase);
-        log.info("Successfully updated testStory item: {}", updatedTestCase.getId());
+        log.info("Successfully updated testCase item: {}", updatedTestCase.getId());
 
         return entityAdapter.toDTO(updatedTestCase);
     }
 
     public void deleteTestCase(Long id) {
-        log.info("Deleting testStory with id [{}]", id);
+        log.info("Deleting testCase with id [{}]", id);
 
-        log.info("Remove all testResults for testStoryId [{}]", id);
-//        testResultApi.deleteResults(findAllTestResultsWithTestCaseId());
+        log.info("Remove all testResults for testCaseId [{}]", id);
 
         testCaseRepository.deleteById(id);
-        log.info("Successfully removed testStory with id [{}]", id);
+        log.info("Successfully removed testCase with id [{}]", id);
     }
 
     public TestCaseDTO getTestCaseDTO(Long id) {
-        TestCase testStory = this.testCaseRepository.findById(id)
+        TestCase testCase = this.testCaseRepository.findById(id)
             .orElseThrow(newResourceNotFoundException("TestCase", "id", id));
-        return entityAdapter.toDTO(testStory);
+        return entityAdapter.toDTO(testCase);
     }
 
-    public List<TestCaseDTO> updateTestCaseBatch(List<TestCaseDTO> testStoryBatch) {
-        log.info("Updating [{}] test stories", testStoryBatch.size());
-        List<TestCaseDTO> updatedTestCaseBatch = testStoryBatch.stream()
+    public List<TestCaseDTO> updateTestCaseBatch(List<TestCaseDTO> testCaseBatch) {
+        log.info("Updating [{}] test stories", testCaseBatch.size());
+        List<TestCaseDTO> updatedTestCaseBatch = testCaseBatch.stream()
             .map(testCaseDTO -> updateTestCase(testCaseDTO.getId(), testCaseDTO))
             .collect(Collectors.toList());
 
@@ -78,21 +76,9 @@ public class TestCaseService {
         return testCaseRepository.findByAcceptanceCriteriaId(acceptanceCriteriaId);
     }
 
-    public void deleteTestStoriesWithAcceptanceCriteriaId(Long acceptanceCriteriaId) {
-        log.info("Deleting testStories with acceptanceCriteriaId [{}]", acceptanceCriteriaId);
-        List<TestCase> testStoryList = testCaseRepository.findByAcceptanceCriteriaId(acceptanceCriteriaId);
-        testStoryList.forEach(ts -> deleteTestCase(ts.getId()));
-        log.info("Successfully removed all testStories with acceptanceCriteriaId [{}]", acceptanceCriteriaId);
-    }
-
     public Integer countTestCaseByFeatureId(Long featureId) {
         log.info("Count test stories by featureId [{}]", featureId);
         return testCaseRepository.countByFeatureId(featureId);
-    }
-
-    public Long countTestStoriesByFeatureIdAndAutomated(Long featureId, Boolean automated) {
-        log.info("Count automated test stories by featureId [{}]", featureId);
-        return testCaseRepository.countByFeatureIdAndAutomated(featureId, automated);
     }
 
     public List<TestCaseDTO> getAllTestCases() {

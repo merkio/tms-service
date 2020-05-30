@@ -26,9 +26,7 @@ public class AcceptanceCriteriaRepositoryTest {
 
     @Test
     void saveAcceptanceCriteria() {
-        Feature feature = featureRepository.saveAndFlush(Feature.builder()
-                                                             .name("Feature")
-                                                             .build());
+        Feature feature = featureRepository.saveAndFlush(Feature.builder().name("Feature").build());
 
         AcceptanceCriteria ac = AcceptanceCriteria.builder()
             .name("First")
@@ -45,9 +43,7 @@ public class AcceptanceCriteriaRepositoryTest {
 
     @Test
     void saveAndFindAcceptanceCriteria() {
-        Feature feature = featureRepository.saveAndFlush(Feature.builder()
-                                                             .name("Feature")
-                                                             .build());
+        Feature feature = featureRepository.saveAndFlush(Feature.builder().name("Feature").build());
 
         AcceptanceCriteria ac = AcceptanceCriteria.builder()
             .name("First")

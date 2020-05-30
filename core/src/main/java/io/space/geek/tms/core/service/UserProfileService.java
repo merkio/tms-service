@@ -1,11 +1,11 @@
 package io.space.geek.tms.core.service;
 
 
+import io.space.geek.tms.commons.dto.tms.UserProfileDTO;
+import io.space.geek.tms.commons.util.BeanUtils;
 import io.space.geek.tms.core.domain.UserProfile;
 import io.space.geek.tms.core.repository.UserProfileRepository;
 import io.space.geek.tms.core.util.EntityAdapter;
-import io.space.geek.tms.commons.dto.tms.UserProfileDTO;
-import io.space.geek.tms.commons.util.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -33,7 +33,6 @@ public class UserProfileService {
         log.info("Getting user profile [{}]", id);
         UserProfile userProfile = userProfileRepository.findById(id)
             .orElseThrow(newResourceNotFoundException("User profile", "id", id));
-        log.info("Successfully got user profile [{}]", id);
         return entityAdapter.toDTO(userProfile);
     }
 
@@ -60,6 +59,5 @@ public class UserProfileService {
     public void deleteUserProfile(Long userProfileId) {
         log.info("Deleting user profile [{}]", userProfileId);
         userProfileRepository.deleteById(userProfileId);
-        log.trace("Successfully deleted user profile [{}]", userProfileId);
     }
 }

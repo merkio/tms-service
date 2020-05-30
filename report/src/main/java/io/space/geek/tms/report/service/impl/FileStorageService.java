@@ -42,7 +42,6 @@ public class FileStorageService implements IFileStorageService {
         String filePath = StringUtils.isNotBlank(folderName) ? folderName : StringUtils.EMPTY;
         log.info("Uploading file [{}]", filePath);
         FilesUtils.move(file, filePath, rootPath);
-        log.info("Successfully uploaded file [{}/{}]", filePath, fileName);
         return String.format("%s/%s", folderName, fileName);
     }
 
@@ -52,7 +51,6 @@ public class FileStorageService implements IFileStorageService {
         log.info("Save string to file [{}/{}]", folderName, fileName);
         File file = Path.of(rootPath, folderName, fileName).toFile();
         FileUtils.writeStringToFile(file, content, StandardCharsets.UTF_8);
-        log.info("Successfully saved string to file [{}/{}]", folderName, fileName);
         return String.format("%s/%s", folderName, fileName);
     }
 

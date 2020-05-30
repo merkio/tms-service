@@ -28,7 +28,6 @@ public class TestRunService implements ITestRunService {
     public TestRunDTO createTestRun(@NotNull TestRunDTO testRunDTO) {
         log.info("Create new test run with name [{}]", testRunDTO.getName());
         TestRun savedTestRun = testRunRepository.save(entityAdapter.fromDTO(testRunDTO));
-        log.info("Successfully saved test run [{}] with id [{}]", savedTestRun.getName(), savedTestRun.getId());
         return entityAdapter.toDTO(savedTestRun);
     }
 
@@ -43,19 +42,16 @@ public class TestRunService implements ITestRunService {
     @Override
     public TestRunDTO getTestRun(@NotNull String id) {
         log.info("Get test run with id [{}]", id);
-        return entityAdapter.toDTO(testRunRepository.findById(id)
-                                       .orElseThrow(newResourceNotFoundException("test-run", "id", id)));
+        return entityAdapter.toDTO(testRunRepository.findById(id).orElseThrow(newResourceNotFoundException("test-run", "id", id)));
     }
 
     @Override
     public TestRunDTO updateTestRun(@NotNull String id, @NotNull TestRunDTO testRunDTO) {
         log.info("Update test run [{}]", id);
-        TestRun currentTestRun = testRunRepository.findById(id)
-            .orElseThrow(newResourceNotFoundException("test-run", "id", id));
+        TestRun currentTestRun = testRunRepository.findById(id).orElseThrow(newResourceNotFoundException("test-run", "id", id));
         BeanUtils.copyNonNullProperties(entityAdapter.fromDTO(testRunDTO), currentTestRun);
 
         testRunRepository.save(currentTestRun);
-        log.info("Successfully updated test run [{}]", id);
         return entityAdapter.toDTO(currentTestRun);
     }
 

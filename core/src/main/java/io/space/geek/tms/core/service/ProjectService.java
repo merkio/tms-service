@@ -32,7 +32,7 @@ public class ProjectService {
     public ProjectDTO getProject(Long id) {
         log.info("Getting project [{}]", id);
         Project project = this.projectRepository.findById(id)
-          .orElseThrow(newResourceNotFoundException("Project", "id", id));
+            .orElseThrow(newResourceNotFoundException("Project", "id", id));
         log.info("Successfully got project [{}]", id);
         return entityAdapter.toDTO(project);
     }
@@ -42,7 +42,7 @@ public class ProjectService {
 
         Project project = entityAdapter.fromDTO(projectDTO);
         Project currentProject = projectRepository.findById(projectDTO.getId())
-          .orElseThrow(newResourceNotFoundException("Project", "id", projectDTO.getId()));
+            .orElseThrow(newResourceNotFoundException("Project", "id", projectDTO.getId()));
 
         BeanUtils.copyNonNullProperties(project, currentProject);
         final Project updatedProject = this.projectRepository.save(currentProject);
