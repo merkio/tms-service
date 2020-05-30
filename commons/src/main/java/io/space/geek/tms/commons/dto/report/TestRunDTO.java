@@ -46,6 +46,8 @@ public class TestRunDTO {
 
     private TestRunConfigurationDTO configuration;
 
+    private TestRunStatisticsDTO statistics;
+
     private Set<TestResult> results;
 
 }

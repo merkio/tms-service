@@ -4,6 +4,7 @@ package io.space.geek.tms.report.domain;
 import io.qameta.allure.entity.TestResult;
 import io.space.geek.tms.commons.domain.BaseDocument;
 import io.space.geek.tms.commons.dto.report.TestRunConfigurationDTO;
+import io.space.geek.tms.commons.dto.report.TestRunStatisticsDTO;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -46,6 +47,8 @@ public class TestRun extends BaseDocument {
     private String sendTo;
 
     private TestRunConfigurationDTO configuration;
+
+    private TestRunStatisticsDTO statistics;
 
     private Set<TestResult> results;
 }
