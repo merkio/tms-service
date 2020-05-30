@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: report
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/tms
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui
+
+server:
+  port: 8282
+logging:
+  file:
+    name: "${spring.application.name}.log"
+    clean-history-on-start: true
+
+storage.files.rootPath: attachments/
