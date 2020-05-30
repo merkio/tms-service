@@ -1,7 +1,6 @@
 package io.space.geek.tms.report.controller;
 
 import io.space.geek.tms.commons.client.report.TestAttachmentApi;
-import io.space.geek.tms.commons.dto.report.TestAttachmentDTO;
 import io.space.geek.tms.report.service.ITestAttachmentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -20,14 +19,14 @@ public class TestAttachmentController implements TestAttachmentApi {
 
     @Override
     public String uploadAttachment(@RequestPart(value = "file") MultipartFile file,
-                                              @PathVariable("runId") String runId) {
+                                   @PathVariable("runId") String runId) {
         return attachmentService.uploadAttachment(file, runId);
     }
 
     @Override
     public String uploadAttachment(@RequestPart(value = "file") MultipartFile file,
-                                              @PathVariable("folderName") String folderName,
-                                              @PathVariable("fileName") String fileName) {
+                                   @PathVariable("folderName") String folderName,
+                                   @PathVariable("fileName") String fileName) {
         return attachmentService.uploadAttachment(file, folderName, fileName);
     }
 

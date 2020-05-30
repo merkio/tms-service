@@ -2,8 +2,6 @@ package io.space.geek.tms.report.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-
 public interface IFileStorageService {
 
     String uploadFile(MultipartFile file);

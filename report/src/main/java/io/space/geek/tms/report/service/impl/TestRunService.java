@@ -48,7 +48,7 @@ public class TestRunService implements ITestRunService {
     }
 
     @Override
-    public TestRunDTO updateTestRun(String id, TestRunDTO testRunDTO) {
+    public TestRunDTO updateTestRun(@NotNull String id, @NotNull TestRunDTO testRunDTO) {
         log.info("Update test run [{}]", id);
         TestRun currentTestRun = testRunRepository.findById(id)
             .orElseThrow(newResourceNotFoundException("test-run", "id", id));
@@ -60,7 +60,7 @@ public class TestRunService implements ITestRunService {
     }
 
     @Override
-    public void deleteTestRun(String id) {
+    public void deleteTestRun(@NotNull String id) {
         log.info("Delete test run [{}]", id);
         testRunRepository.deleteById(id);
     }

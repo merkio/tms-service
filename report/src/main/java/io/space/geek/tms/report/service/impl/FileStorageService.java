@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -26,42 +28,41 @@ public class FileStorageService implements IFileStorageService {
     }
 
     @Override
-    public String uploadFile(MultipartFile file) {
-        return uploadFileToFolder(file, null, file.getOriginalFilename());
+    public String uploadFile(@NotNull MultipartFile file) {
+        return uploadFileToFolder(file, "", file.getOriginalFilename());
     }
 
     @Override
-    public String uploadFileToFolder(MultipartFile file, String folderName) {
+    public String uploadFileToFolder(@NotNull MultipartFile file, @NotNull String folderName) {
         return uploadFileToFolder(file, folderName, file.getOriginalFilename());
     }
 
     @Override
-    public String uploadFileToFolder(MultipartFile file, String folderName, String fileName) {
+    public String uploadFileToFolder(@NotNull MultipartFile file, @NotNull String folderName, @NotNull String fileName) {
         String filePath = StringUtils.isNotBlank(folderName) ? folderName : StringUtils.EMPTY;
         log.info("Uploading file [{}]", filePath);
-        FilesUtils.save(file, filePath, rootPath);
+        FilesUtils.move(file, filePath, rootPath);
         log.info("Successfully uploaded file [{}/{}]", filePath, fileName);
         return String.format("%s/%s", folderName, fileName);
     }
 
     @Override
     @SneakyThrows({IOException.class})
-    public String uploadStringToFile(String content, String folderName, String fileName) {
-        log.info("Uploading string to file [{}/{}]", folderName, fileName);
-        File file = File.createTempFile(fileName, ".tmp");
+    public String uploadStringToFile(@NotNull String content, @NotNull String folderName, @NotNull String fileName) {
+        log.info("Save string to file [{}/{}]", folderName, fileName);
+        File file = Path.of(rootPath, folderName, fileName).toFile();
         FileUtils.writeStringToFile(file, content, StandardCharsets.UTF_8);
-        FilesUtils.save(file, fileName, folderName, rootPath);
-        log.info("Successfully uploaded file [{}/{}]", folderName, fileName);
+        log.info("Successfully saved string to file [{}/{}]", folderName, fileName);
         return String.format("%s/%s", folderName, fileName);
     }
 
     @Override
-    public void deleteObject(String folderName, String fileName) {
-        deleteObject(StringUtils.isNotBlank(folderName) ? String.format("%s/%s", folderName, fileName) : fileName);
+    public void deleteObject(@NotEmpty String folderName, @NotEmpty String fileName) {
+        deleteObject(String.format("%s/%s", folderName, fileName));
     }
 
     @Override
-    public void deleteObject(String path) {
+    public void deleteObject(@NotEmpty String path) {
         log.info("Deleting file [{}/{}]", rootPath, path);
         FileUtils.deleteQuietly(Path.of(rootPath, path).toFile());
     }

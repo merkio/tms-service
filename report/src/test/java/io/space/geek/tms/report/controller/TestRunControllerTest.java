@@ -44,6 +44,8 @@ public class TestRunControllerTest {
     void createTestRun() throws JsonProcessingException {
         TestRunDTO testRunDTO = TestRunDTO.builder()
             .name("TestRun")
+            .projectId(1L)
+            .featureId(2L)
             .description("Description")
             .configuration(TestRunConfigurationDTO.builder().environment("qa").platform("").build())
             .results(Collections.emptySet())

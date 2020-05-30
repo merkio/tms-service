@@ -3,6 +3,8 @@ package io.space.geek.tms.commons.dto.report;
 import io.qameta.allure.entity.TestResult;
 import lombok.*;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Set;
 
@@ -15,10 +17,13 @@ public class TestRunDTO {
 
     private String id;
 
+    @NotNull
     private Long projectId;
 
+    @NotNull
     private Long featureId;
 
+    @NotEmpty
     private String name;
 
     private String description;
@@ -40,8 +45,6 @@ public class TestRunDTO {
     private String sendTo;
 
     private TestRunConfigurationDTO configuration;
-
-    private RunStatisticsDTO statisticsDTO;
 
     private Set<TestResult> results;
 

@@ -14,11 +14,8 @@ import java.nio.file.Path;
 @Slf4j
 public final class FilesUtils {
 
-
-    @SneakyThrows(IOException.class)
     public static void createFolder(String path) {
-        log.info("Create folder [{}]", path);
-        Files.createDirectories(Path.of(path));
+        createFolder(Path.of(path));
     }
 
     @SneakyThrows(IOException.class)
@@ -28,8 +25,7 @@ public final class FilesUtils {
     }
 
     public static boolean pathExist(String path) {
-        log.info("Check if path [{}] is exist", path);
-        return Files.exists(Path.of(path));
+        return pathExist(Path.of(path));
     }
 
     public static boolean pathExist(Path path) {
@@ -38,17 +34,10 @@ public final class FilesUtils {
     }
 
     @SneakyThrows(IOException.class)
-    public static void save(MultipartFile file, String filePath, String rootPath) {
+    public static void move(MultipartFile file, String filePath, String rootPath) {
         log.info("Save file [{}] to the directory [{}/{}]", file.getOriginalFilename(), rootPath, filePath);
         createFolder(Path.of(rootPath, filePath));
         FileUtils.writeByteArrayToFile(Path.of(rootPath, filePath, file.getOriginalFilename()).toFile(), file.getBytes());
-    }
-
-    @SneakyThrows(IOException.class)
-    public static void save(File file, String fileName, String filePath, String rootPath) {
-        log.info("Save file [{}] to the directory [{}/{}]", file.getName(), rootPath, filePath);
-        createFolder(Path.of(rootPath, filePath));
-        FileUtils.copyFile(file, Path.of(rootPath, filePath, fileName).toFile());
     }
 
     public static File loadFile(String name) {

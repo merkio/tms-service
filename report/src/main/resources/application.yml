@@ -18,4 +18,4 @@ logging:
     name: "${spring.application.name}.log"
     clean-history-on-start: true
 
-storage.files.rootPath: attachments/
+storage.files.rootPath: attachments
