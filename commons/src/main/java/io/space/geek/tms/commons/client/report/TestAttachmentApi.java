@@ -1,6 +1,5 @@
 package io.space.geek.tms.commons.client.report;
 
-import io.space.geek.tms.commons.dto.report.TestAttachmentDTO;
 import io.swagger.annotations.ApiModel;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;

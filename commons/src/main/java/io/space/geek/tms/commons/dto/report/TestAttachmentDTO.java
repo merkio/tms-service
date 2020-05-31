@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class TestAttachmentDTO {
 
-    private Long testResultId;
+    private String uid;
 
     private String url;
 }
