@@ -29,6 +29,23 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.github.openfeign.form</groupId>
+            <artifactId>feign-form</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-gson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-slf4j</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-plugin-api</artifactId>
             <version>${allure.version}</version>

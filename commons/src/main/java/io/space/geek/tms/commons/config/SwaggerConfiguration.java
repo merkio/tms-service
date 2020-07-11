@@ -31,7 +31,6 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
             .groupName("TMS API")
             .select()
-            .apis(RequestHandlerSelectors.basePackage("io.space.geek.tms"))
             .paths(PathSelectors.ant("/api/**"))
             .build()
             .apiInfo(apiInfo())

@@ -1,0 +1,1156 @@
+{
+  "id": "5f08a41d6fa71a741e846ad2",
+  "projectId": 0,
+  "name": "DEFAULT",
+  "manual": false,
+  "configuration": {},
+  "statistics": {
+    "total": 8,
+    "passed": 6,
+    "failed": 2,
+    "skipped": 0,
+    "started": 0,
+    "aborted": 0
+  },
+  "results": [
+    {
+      "uid": "fadb60fea4159afd",
+      "name": "simpleTest",
+      "fullName": "my.company.SimpleTest.simpleTest",
+      "historyId": "34a2a28e69cf40323fcd6486ebf7b615",
+      "time": {
+        "start": 1592498655623,
+        "stop": 1592498655624,
+        "duration": 1
+      },
+      "status": "passed",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "passed",
+        "steps": [
+          {
+            "name": "step 1",
+            "time": {
+              "start": 1592498655623,
+              "stop": 1592498655623,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          },
+          {
+            "name": "step 2",
+            "time": {
+              "start": 1592498655624,
+              "stop": 1592498655624,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "simpleTest"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8520@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "owner",
+          "value": "Second Owner"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [],
+      "hidden": false,
+      "retry": false,
+      "extra": {
+        "severity": "normal",
+        "owner": "Second Owner",
+        "retries": [
+          {
+            "uid": "ad9559e9d94c674e",
+            "status": "passed",
+            "time": {
+              "start": 1592498618974,
+              "stop": 1592498618974,
+              "duration": 0
+            }
+          }
+        ],
+        "categories": [],
+        "tags": []
+      },
+      "source": "fadb60fea4159afd.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "661ab4efb1020ac2",
+      "name": "allureId",
+      "fullName": "my.company.SimpleTest.allureId",
+      "historyId": "949f717610c15d61ae7ea37328920b79",
+      "time": {
+        "start": 1592498655506,
+        "stop": 1592498655529,
+        "duration": 23
+      },
+      "status": "passed",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "passed",
+        "steps": [
+          {
+            "name": "check the response",
+            "time": {
+              "start": 1592498655512,
+              "stop": 1592498655513,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [
+          {
+            "uid": "4ba0d285260ca3ba",
+            "name": "log file",
+            "source": "4ba0d285260ca3ba.txt",
+            "type": "text/plain",
+            "size": 24
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 1,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "allureId"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8520@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "owner",
+          "value": "I'm owner"
+        },
+        {
+          "name": "AS_ID",
+          "value": "333"
+        },
+        {
+          "name": "lead",
+          "value": "My Team Lead"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [
+        {
+          "name": "Issue_ID",
+          "url": "https://example.org/issue/Issue_ID",
+          "type": "issue"
+        },
+        {
+          "name": "TMS_ID",
+          "url": "https://example.org/tms/TMS_ID",
+          "type": "tms"
+        }
+      ],
+      "hidden": false,
+      "retry": false,
+      "extra": {
+        "severity": "normal",
+        "owner": "I'm owner",
+        "retries": [
+          {
+            "uid": "8cb00df5e996c08b",
+            "status": "passed",
+            "time": {
+              "start": 1592498618863,
+              "stop": 1592498618887,
+              "duration": 24
+            }
+          }
+        ],
+        "categories": [],
+        "tags": []
+      },
+      "source": "661ab4efb1020ac2.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "8cb00df5e996c08b",
+      "name": "allureId",
+      "fullName": "my.company.SimpleTest.allureId",
+      "historyId": "949f717610c15d61ae7ea37328920b79",
+      "time": {
+        "start": 1592498618863,
+        "stop": 1592498618887,
+        "duration": 24
+      },
+      "status": "passed",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "passed",
+        "steps": [
+          {
+            "name": "check the response",
+            "time": {
+              "start": 1592498618868,
+              "stop": 1592498618869,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [
+          {
+            "uid": "aa4dc2019b74d5c2",
+            "name": "log file",
+            "source": "aa4dc2019b74d5c2.txt",
+            "type": "text/plain",
+            "size": 24
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 1,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "allureId"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8012@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "owner",
+          "value": "I'm owner"
+        },
+        {
+          "name": "AS_ID",
+          "value": "333"
+        },
+        {
+          "name": "lead",
+          "value": "My Team Lead"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [
+        {
+          "name": "Issue_ID",
+          "url": "https://example.org/issue/Issue_ID",
+          "type": "issue"
+        },
+        {
+          "name": "TMS_ID",
+          "url": "https://example.org/tms/TMS_ID",
+          "type": "tms"
+        }
+      ],
+      "hidden": true,
+      "retry": true,
+      "extra": {
+        "categories": [],
+        "tags": []
+      },
+      "source": "8cb00df5e996c08b.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "2922cec45b1ec74",
+      "name": "allureId",
+      "fullName": "my.company.SecondTest.allureId",
+      "historyId": "3f9c39419f4f33f27c1f19173bd0b1de",
+      "time": {
+        "start": 1592498618980,
+        "stop": 1592498618992,
+        "duration": 12
+      },
+      "status": "failed",
+      "statusMessage": "Failed test",
+      "statusTrace": "java.lang.AssertionError: Failed test\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat my.company.SecondTest.allureId(SecondTest.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1540)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:766)\n\tat org.testng.TestRunner.run(TestRunner.java:587)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:384)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:286)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1109)\n\tat org.testng.TestNG.runSuites(TestNG.java:1039)\n\tat org.testng.TestNG.run(TestNG.java:1007)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "failed",
+        "statusMessage": "Failed test",
+        "statusTrace": "java.lang.AssertionError: Failed test\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat my.company.SecondTest.allureId(SecondTest.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1540)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:766)\n\tat org.testng.TestRunner.run(TestRunner.java:587)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:384)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:286)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1109)\n\tat org.testng.TestNG.runSuites(TestNG.java:1039)\n\tat org.testng.TestNG.run(TestNG.java:1007)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+        "steps": [
+          {
+            "name": "check the response",
+            "time": {
+              "start": 1592498618980,
+              "stop": 1592498618980,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [
+          {
+            "uid": "8fb7a9c23b79687",
+            "name": "log file",
+            "source": "8fb7a9c23b79687.txt",
+            "type": "text/plain",
+            "size": 24
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 1,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": true,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "allureId"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8012@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "AS_ID",
+          "value": "444"
+        },
+        {
+          "name": "lead",
+          "value": "Team Lead"
+        },
+        {
+          "name": "owner",
+          "value": "Class owner"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [
+        {
+          "name": "TMS_ID2",
+          "url": "https://example.org/tms/TMS_ID2",
+          "type": "tms"
+        },
+        {
+          "name": "Issue_ID2",
+          "url": "https://example.org/issue/Issue_ID2",
+          "type": "issue"
+        }
+      ],
+      "hidden": true,
+      "retry": true,
+      "extra": {
+        "categories": [],
+        "tags": []
+      },
+      "source": "2922cec45b1ec74.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "c1918a55b4016ec8",
+      "name": "secondFirstTest",
+      "fullName": "my.company.SecondTest.secondFirstTest",
+      "historyId": "3bc19a8342940e5236d02aea4b0b431b",
+      "time": {
+        "start": 1592498618994,
+        "stop": 1592498619019,
+        "duration": 25
+      },
+      "status": "passed",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Outer step",
+            "time": {
+              "start": 1592498619018,
+              "stop": 1592498619019,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Inner step",
+                "time": {
+                  "start": 1592498619018,
+                  "stop": 1592498619018,
+                  "duration": 0
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "stepsCount": 0,
+                "attachmentsCount": 0,
+                "shouldDisplayMessage": false,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [
+              {
+                "name": "name",
+                "value": "Steps"
+              }
+            ],
+            "stepsCount": 1,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": true
+          },
+          {
+            "name": "step 1",
+            "time": {
+              "start": 1592498619019,
+              "stop": 1592498619019,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          },
+          {
+            "name": "step 2",
+            "time": {
+              "start": 1592498619019,
+              "stop": 1592498619019,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 4,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "secondFirstTest"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8012@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "owner",
+          "value": "Class owner"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [],
+      "hidden": true,
+      "retry": true,
+      "extra": {
+        "categories": [],
+        "tags": []
+      },
+      "source": "c1918a55b4016ec8.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "bbda653b2552507a",
+      "name": "secondFirstTest",
+      "fullName": "my.company.SecondTest.secondFirstTest",
+      "historyId": "3bc19a8342940e5236d02aea4b0b431b",
+      "time": {
+        "start": 1592498655688,
+        "stop": 1592498655698,
+        "duration": 10
+      },
+      "status": "passed",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Outer step",
+            "time": {
+              "start": 1592498655697,
+              "stop": 1592498655698,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Inner step",
+                "time": {
+                  "start": 1592498655697,
+                  "stop": 1592498655697,
+                  "duration": 0
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "stepsCount": 0,
+                "attachmentsCount": 0,
+                "shouldDisplayMessage": false,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [
+              {
+                "name": "name",
+                "value": "Steps"
+              }
+            ],
+            "stepsCount": 1,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": true
+          },
+          {
+            "name": "step 1",
+            "time": {
+              "start": 1592498655698,
+              "stop": 1592498655698,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          },
+          {
+            "name": "step 2",
+            "time": {
+              "start": 1592498655698,
+              "stop": 1592498655698,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 4,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "secondFirstTest"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8520@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "owner",
+          "value": "Class owner"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [],
+      "hidden": false,
+      "retry": false,
+      "extra": {
+        "severity": "normal",
+        "owner": "Class owner",
+        "retries": [
+          {
+            "uid": "c1918a55b4016ec8",
+            "status": "passed",
+            "time": {
+              "start": 1592498618994,
+              "stop": 1592498619019,
+              "duration": 25
+            }
+          }
+        ],
+        "categories": [],
+        "tags": []
+      },
+      "source": "bbda653b2552507a.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "12fc1614970c815",
+      "name": "allureId",
+      "fullName": "my.company.SecondTest.allureId",
+      "historyId": "3f9c39419f4f33f27c1f19173bd0b1de",
+      "time": {
+        "start": 1592498655632,
+        "stop": 1592498655674,
+        "duration": 42
+      },
+      "status": "failed",
+      "statusMessage": "Failed test",
+      "statusTrace": "java.lang.AssertionError: Failed test\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat my.company.SecondTest.allureId(SecondTest.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1540)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:766)\n\tat org.testng.TestRunner.run(TestRunner.java:587)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:384)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:286)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1109)\n\tat org.testng.TestNG.runSuites(TestNG.java:1039)\n\tat org.testng.TestNG.run(TestNG.java:1007)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "failed",
+        "statusMessage": "Failed test",
+        "statusTrace": "java.lang.AssertionError: Failed test\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat my.company.SecondTest.allureId(SecondTest.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1540)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:766)\n\tat org.testng.TestRunner.run(TestRunner.java:587)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:384)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:286)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1109)\n\tat org.testng.TestNG.runSuites(TestNG.java:1039)\n\tat org.testng.TestNG.run(TestNG.java:1007)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+        "steps": [
+          {
+            "name": "check the response",
+            "time": {
+              "start": 1592498655632,
+              "stop": 1592498655632,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [
+          {
+            "uid": "e1db736bcb2b3643",
+            "name": "log file",
+            "source": "e1db736bcb2b3643.txt",
+            "type": "text/plain",
+            "size": 24
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 1,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": true,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "allureId"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SecondTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8520@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "AS_ID",
+          "value": "444"
+        },
+        {
+          "name": "lead",
+          "value": "Team Lead"
+        },
+        {
+          "name": "owner",
+          "value": "Class owner"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [
+        {
+          "name": "TMS_ID2",
+          "url": "https://example.org/tms/TMS_ID2",
+          "type": "tms"
+        },
+        {
+          "name": "Issue_ID2",
+          "url": "https://example.org/issue/Issue_ID2",
+          "type": "issue"
+        }
+      ],
+      "hidden": false,
+      "retry": false,
+      "extra": {
+        "severity": "normal",
+        "owner": "Class owner",
+        "retries": [
+          {
+            "uid": "2922cec45b1ec74",
+            "status": "failed",
+            "statusDetails": "Failed test",
+            "time": {
+              "start": 1592498618980,
+              "stop": 1592498618992,
+              "duration": 12
+            }
+          }
+        ],
+        "categories": [
+          {
+            "name": "Product defects",
+            "matchedStatuses": [],
+            "flaky": false
+          }
+        ],
+        "tags": []
+      },
+      "source": "12fc1614970c815.json",
+      "parameterValues": []
+    },
+    {
+      "uid": "ad9559e9d94c674e",
+      "name": "simpleTest",
+      "fullName": "my.company.SimpleTest.simpleTest",
+      "historyId": "34a2a28e69cf40323fcd6486ebf7b615",
+      "time": {
+        "start": 1592498618974,
+        "stop": 1592498618974,
+        "duration": 0
+      },
+      "status": "passed",
+      "flaky": false,
+      "newFailed": false,
+      "beforeStages": [],
+      "testStage": {
+        "status": "passed",
+        "steps": [
+          {
+            "name": "step 1",
+            "time": {
+              "start": 1592498618974,
+              "stop": 1592498618974,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          },
+          {
+            "name": "step 2",
+            "time": {
+              "start": 1592498618974,
+              "stop": 1592498618974,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      "afterStages": [],
+      "labels": [
+        {
+          "name": "package",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testClass",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "testMethod",
+          "value": "simpleTest"
+        },
+        {
+          "name": "parentSuite",
+          "value": "Surefire suite"
+        },
+        {
+          "name": "suite",
+          "value": "Surefire test"
+        },
+        {
+          "name": "subSuite",
+          "value": "my.company.SimpleTest"
+        },
+        {
+          "name": "host",
+          "value": "igor-ThinkPad-E480"
+        },
+        {
+          "name": "thread",
+          "value": "8012@igor-ThinkPad-E480.main(1)"
+        },
+        {
+          "name": "framework",
+          "value": "testng"
+        },
+        {
+          "name": "language",
+          "value": "java"
+        },
+        {
+          "name": "owner",
+          "value": "Second Owner"
+        },
+        {
+          "name": "resultFormat",
+          "value": "allure2"
+        }
+      ],
+      "parameters": [],
+      "links": [],
+      "hidden": true,
+      "retry": true,
+      "extra": {
+        "categories": [],
+        "tags": []
+      },
+      "source": "ad9559e9d94c674e.json",
+      "parameterValues": []
+    }
+  ]
+}

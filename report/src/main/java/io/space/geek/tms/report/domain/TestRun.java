@@ -1,8 +1,8 @@
 package io.space.geek.tms.report.domain;
 
 
-import io.qameta.allure.entity.TestResult;
 import io.space.geek.tms.commons.domain.BaseDocument;
+import io.space.geek.tms.commons.dto.report.TestResult;
 import io.space.geek.tms.commons.dto.report.TestRunConfigurationDTO;
 import io.space.geek.tms.commons.dto.report.TestRunStatisticsDTO;
 import lombok.*;

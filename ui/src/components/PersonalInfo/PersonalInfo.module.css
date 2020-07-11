@@ -1,0 +1,22 @@
+.PersonalInfo {
+    padding: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.SaveButton {
+    background: cornflowerblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1px;
+}
+
+.CancelButton {
+    background: indianred;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1px;
+}

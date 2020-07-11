@@ -1,6 +1,5 @@
 package io.space.geek.tms.commons.dto.report;
 
-import io.qameta.allure.entity.TestResult;
 import lombok.*;
 
 import javax.validation.constraints.NotEmpty;

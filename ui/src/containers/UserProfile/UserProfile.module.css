@@ -1,0 +1,18 @@
+.UserProfile {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-grow: 1;
+    width: 100%;
+    background: linear-gradient(90deg, #5a5868 0%, #9b98af 100%);
+}
+
+.UserProfile h1 {
+    color: #c9afaf;
+    margin-left: 10px;
+}
+
+.PersonalInfoWrapper {
+    width: 600px;
+}
+
